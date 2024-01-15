@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:widget_example/my_custom_tabbar.dart';
+import 'package:widget_example/my_custom_drawer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,11 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Scaffold(
-          appBar: AppBar(
-            title: const Text('Flutter Demo'),
-          ),
-          body: const MyCustomTabBar()),
+      home: const SafeArea(child: MyCustomDrawer()),
     );
   }
 }
