@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:widget_example/my_custom_drawer.dart';
+import 'package:widget_example/my_custom_checkbox.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,11 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const SafeArea(child: MyCustomDrawer()),
+      home: Scaffold(
+          appBar: AppBar(
+            title: const Text('Flutter Demo'),
+          ),
+          body: const MyCustomCheckbox()),
     );
   }
 }
