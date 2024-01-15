@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:widget_example/my_custom_radio.dart';
+import 'package:widget_example/my_custom_bottomnav.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
             title: const Text('Flutter Demo'),
           ),
-          body: const MyCustomRadio()),
+          body: const MyCustomBottomNavigation()),
     );
   }
 }
