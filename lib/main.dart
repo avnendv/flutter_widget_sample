@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:widget_example/my_custom_card.dart';
+import 'package:widget_example/my_custom_tabbar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
             title: const Text('Flutter Demo'),
           ),
-          body: const MyCustomCard()),
+          body: const MyCustomTabBar()),
     );
   }
 }
